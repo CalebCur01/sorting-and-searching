@@ -14,7 +14,7 @@ int linearSearch(int arr[],int size,int val);
 int binarySearch(int arr[],int size,int val);
 
 int main(){
-    //First we make an array of length SIZE, fill with random numbers, and then we copy it (to sort the same list diffrent ways)
+    //First we make an array of length SIZE, fill with random numbers, and then we copy it (to sort the same array multiple times)
     srand(time(0));
     int numbers1[SIZE];
     int numbers2[SIZE];
@@ -75,7 +75,7 @@ void selectionSort(int arr[],int size){ //we iterate through the array and place
 }
 void bubbleSort(int arr[],int size){ 	//we iterate thorugh the array and compare each element to the one in front of it
     for(int i = 0;i<size;i++){			//and swap accordingly. The highest value "bubbles" to the top. 
-        for(int j = 0;j<size-1;j++){	//at the nth step, the nth largest element is in place. Very simple
+        for(int j = 0;j<size-1;j++){	//at the nth step, the nth largest element is in place
             if(arr[j]>arr[j+1])
                 arraySwap(arr,j+1,j);
         }   printArray(arr,size);
