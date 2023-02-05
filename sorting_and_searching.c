@@ -1,4 +1,4 @@
-//sorting and searching.c - Implementing a few sort and search algorithims for fun and practice
+//sorting and searching.c - Implementing a few sort and search algorithims
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
