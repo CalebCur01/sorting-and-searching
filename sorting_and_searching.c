@@ -90,8 +90,8 @@ void arraySwap(int arr[],int indx1, int indx2){// swap values of indx1 and indx2
     arr[indx1] = arr[indx2];
     arr[indx2] = temp;
 }
-int linearSearch(int arr[],int size,int val){ //the most basic search 
-	for(int i = 0;i<size;i++)		  //we iterate through the list one element at a time
+int linearSearch(int arr[],int size,int val){ 
+	for(int i = 0;i<size;i++)		  //we iterate through the array one element at a time
 		if(arr[i] == val)			  //returns index of the earliest occurence of searched value, or -1 if it doesn't find it
 			return i;
 	return -1;
