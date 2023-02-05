@@ -12,6 +12,7 @@ void insertionSort(int arr[],int size);
 void bubbleSort(int arr[],int size);
 int linearSearch(int arr[],int size,int val);
 int binarySearch(int arr[],int size,int val);
+int sorted(int arr[],int size);
 
 int main(){
     //First we make an array of length SIZE, fill with random numbers, and then we copy it (to sort the same array multiple times)
@@ -110,4 +111,10 @@ int binarySearch(int arr[],int size, int val){ //works only on a sorted list. We
             rightEnd = middle;
     }
     return -1;
+}
+int sorted(int arr[], int size){ // returns 1 (true) if array is sorted in ascending order, else returns 0 (false)
+    for(int i = 0;i<size-1;i++)
+        if(arr[i] > arr[i+1])
+            return 0;
+    return 1;
 }
